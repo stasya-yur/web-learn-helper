@@ -63,15 +63,18 @@ body {
 
 /* РІЗНІ BORDER ДЛЯ МОДУЛІВ */
 .module4 .card:hover {
-    border: 2px solid #60a5fa; /* синій */
+    border: 2px solid #60a5fa; 
     transform: translateY(-5px);
 }
 
 .module5 .card:hover {
-    border: 2px solid #f59e0b; /* жовтий */
+    border: 2px solid #f59e0b; 
     transform: translateY(-5px);
 }
-
+.module1 .card:hover {
+    border: 2px solid #96ff65;
+    transform: translateY(-5px);
+}
 /* GRID */
 .cards {
     display: grid;
