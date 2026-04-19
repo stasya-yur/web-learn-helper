@@ -1,0 +1,185 @@
+/* ЗАГАЛЬНІ СТИЛІ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+}
+
+h3 {
+  margin: 20px 0 10px;
+}
+
+/* FLEXBOX */
+.flex-container {
+  display: flex;
+  border: 2px solid #0d6efd;
+  padding: 15px;
+  gap: 15px;
+  background-color: #ffffff;
+}
+
+.flex-container.row {
+  flex-direction: row;
+}
+
+.flex-container.column {
+  flex-direction: column;
+  width: 200px;
+}
+
+.item {
+  background-color: #0d6efd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+/* GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px solid #198754;
+}
+/* INTERACTIVE FLEX vs GRID */
+
+.playground {
+  display: grid;
+  grid-template-columns: 1fr 1fr 250px;
+  gap: 20px;
+  align-items: start;
+}
+
+.play {
+  height: 260px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* FLEX */
+.play.flex {
+  display: flex;
+  gap: 10px;
+  border-color: #0d6efd;
+}
+
+/* GRID */
+.play.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-color: #198754;
+}
+
+.box {
+  background-color: #6c757d;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* CONTROLS */
+.controls {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px solid #fd7e14;
+  border-radius: 8px;
+}
+
+.controls label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.controls select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+.grid-item {
+  background-color: #198754;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+/* FR + GAP */
+.fr-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px solid #fd7e14;
+}
+
+.fr-item {
+  background-color: #fd7e14;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+}
+/* RADIO STYLING */
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.controls label {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 6px 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.controls input[type="radio"] {
+  display: none;
+}
+
+.controls input[type="radio"]:checked + span,
+.controls label:has(input:checked) {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.controls label:hover {
+  background-color: #e7f1ff;
+}

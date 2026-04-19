@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px 200px;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-top: 80px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+
+        /* Z-INDEX */
+    .z-container {
+      position: relative;
+      height: 200px;
+      margin-top: 40px;
+    }
+
+    .z1, .z2, .z3 {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      opacity: 0.9;
+    }
+
+    .z1 {
+      background: #6610f2;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    .z2 {
+      background: #20c997;
+      top: 50px;
+      left: 60px;
+      z-index: 2;
+    }
+
+    .z3 {
+      background: #ffc107;
+      top: 80px;
+      left: 100px;
+      z-index: 3;
+    }
+
+
+
+
+
+
+    /* STATIC */
+    .static {
+      position: static;
+      background: #6c757d;
+    }
+
+    /* RELATIVE */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background: #0d6efd;
+    }
+
+    .relative2 {
+      position: relative;
+      top: 20px;
+      left: 90px;
+      background: #659ff7;
+    }
+
+    /* ABSOLUTE */
+    .absolute-container {
+      position: relative;
+      height: 200px;
+      background: #f1f1f1;
+      margin-top: 20px;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      background: #198754;
+    }
+    .absolute2 {
+      position: absolute;
+      top: 40px;
+      right: 240px;
+      background: #45c78a;
+    }
+    .absolute3 {
+      position: absolute;
+      top: 40px;
+      right: 450px;
+      background: #b7fadb;
+    }
+
+    /* FIXED */
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #dc3545;
+      z-index: 1000;
+    }
+
+    /* STICKY */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: #fd7e14;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+#main-text{
+  color:green;
+}
+.text{
+  color: red;
+}
+p{
+  color: blue;
+}
+

@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Заголовок */
+.main-title {
+  text-align: center;
+  padding: 20px;
+  background: #0d6efd;
+  color: white;
+  margin: 0;
+}
+
+/* Сітка */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Назви розділів */
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  background: #dee2e6;
+  border-radius: 8px;
+}
+
+/* на всю ширину */
+.full {
+  grid-column: span 2;
+  text-align: center;
+}
+
+/* Блоки */
+.result, .code {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Код */
+.code {
+  background: #1e1e1e;
+  color: #00ff88;
+  overflow-x: auto;
+  font-size: 18px; /* 🔥 збільшений шрифт */
+  line-height: 1.5;
+}
+
+/* Заголовки */
+.result h1 { font-size: 32px; }
+.result h2 { font-size: 26px; }
+.result h3 { font-size: 22px; }
+.result h4 { font-size: 20px; }
+.result h5 { font-size: 18px; }
+.result h6 { font-size: 16px; }
+
+/* Зображення */
+img {
+  margin-top: 10px;
+  border-radius: 8px;
+  max-width: 50%;
+}

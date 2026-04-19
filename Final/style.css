@@ -1,0 +1,140 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: white;
+}
+
+/* 🔝 Навбар */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px 15px 30px;
+    background: #111827;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin: 0;
+    font-size: 22px;
+}
+
+.navbar a {
+    color: #9ca3af;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+/* 📦 Модулі */
+.module {
+    padding: 40px;
+}
+
+.module h2 {
+    margin-bottom: 20px;
+}
+
+/* 📇 Картки */
+/* КНОПКИ ОДНАКОВОГО РОЗМІРУ */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px; /* фіксована висота */
+    padding: 15px;
+    text-align: center;
+
+    background: #2a2a40;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+/* РІЗНІ BORDER ДЛЯ МОДУЛІВ */
+.module4 .card:hover {
+    border: 2px solid #60a5fa; /* синій */
+    transform: translateY(-5px);
+}
+
+.module5 .card:hover {
+    border: 2px solid #f59e0b; /* жовтий */
+    transform: translateY(-5px);
+}
+
+/* GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+/* DROPDOWN */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: #60a5fa;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #1f2937;
+    min-width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    top: 30px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background: #374151;
+}
+
+/* ПОКАЗ ПРИ НАВЕДЕННІ */
+.dropdown-content {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}

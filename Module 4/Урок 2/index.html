@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форми та CSS — демонстрація</title>
+
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<h1>HTML Форма + CSS властивості</h1>
+
+<form>
+
+  <!-- TEXT -->
+  <label for="name">Текст (text)</label>
+  <input type="text" id="name" placeholder="Введіть ім'я">
+
+  <!-- EMAIL -->
+  <label>Email (email)</label>
+  <input type="email" placeholder="example@email.com">
+
+  <!-- PASSWORD -->
+  <label>Пароль (password)</label>
+  <input type="password">
+
+  <!-- NUMBER -->
+  <label>Вік (number)</label>
+  <input type="number" min="1" max="120">
+
+  <!-- DATE -->
+  <label>Дата (date)</label>
+  <input type="date">
+
+  <!-- COLOR -->
+  <label>Колір (color)</label>
+  <input type="color">
+
+  <!-- RANGE -->
+  <label>Гучність (range)</label>
+  <input type="range">
+
+  <!-- RADIO -->
+  <label>Стать (radio)</label>
+  <input class="inline" type="radio" name="gender"> Чоловік
+  <input class="inline" type="radio" name="gender"> Жінка
+
+  <!-- CHECKBOX -->
+  <label>Інтереси (checkbox)</label>
+  <input class="inline" type="checkbox"> HTML
+  <input class="inline" type="checkbox"> CSS
+  <input class="inline" type="checkbox"> JavaScript
+
+  <!-- SELECT -->
+  <label>Місто (select)</label>
+  <select>
+    <option>Київ</option>
+    <option>Львів</option>
+    <option>Одеса</option>
+  </select>
+
+  <!-- TEXTAREA -->
+  <label>Повідомлення (textarea)</label>
+  <textarea placeholder="Напишіть текст..."></textarea>
+
+  <!-- BUTTON -->
+  <button type="submit">Надіслати</button>
+
+  <!-- BORDER DEMO -->
+  <div class="borders">
+    Демонстрація різних типів border + opacity
+  </div>
+
+</form>
+
+</body>
+</html>

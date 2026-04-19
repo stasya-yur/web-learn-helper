@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+a{
+    background-color: #FE0032;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    background-color: #AE0032;
+    transform: scale(1.5);
+}
+
+a:active{
+    transform: scale(0.8);
+}

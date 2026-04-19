@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>CSS Filters, Gradients, Shadows, Cursors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CSS Effects Demo + Code</h1>
+
+<!-- FILTERS -->
+<section>
+
+<h2>CSS Filters (hover)</h2>
+
+<div class="demo-grid">
+
+<div class="demo">
+<img src="https://picsum.photos/200" class="img blur">
+</div>
+
+<div class="code">
+<pre><code>
+.img.blur:hover{
+  filter: blur(5px);
+}
+</code></pre>
+</div>
+
+</div>
+
+
+<div class="demo-grid">
+
+<div class="demo">
+<img src="https://picsum.photos/201" class="img brightness">
+</div>
+
+<div class="code">
+<pre><code>
+.img.brightness:hover{
+  filter: brightness(150%);
+}
+</code></pre>
+</div>
+
+</div>
+
+
+<div class="demo-grid">
+
+<div class="demo">
+<img src="https://picsum.photos/202" class="img contrast">
+
+</div>
+
+<div class="code">
+<pre><code>
+.img.contrast:hover{
+  filter: contrast(200%);
+}
+</code></pre>
+</div>
+
+</div>
+
+
+<div class="demo-grid">
+
+<div class="demo">
+<img src="https://picsum.photos/203" class="img saturate">
+
+</div>
+
+<div class="code">
+<pre><code>
+.img.saturate:hover{
+  filter: saturate(300%);
+}
+</code></pre>
+</div>
+
+</div>
+
+</section>
+
+<!-- GRADIENTS -->
+<section>
+
+<h2>Gradients</h2>
+
+<div class="demo-grid">
+
+<div class="demo gradient linear">
+linear
+</div>
+
+<div class="code">
+<pre><code>
+background:
+linear-gradient(90deg,red,orange,yellow);
+</code></pre>
+</div>
+
+</div>
+
+<div class="demo-grid">
+
+<div class="demo gradient radial">
+radial
+</div>
+
+<div class="code">
+<pre><code>
+background:
+radial-gradient(circle,blue,purple);
+</code></pre>
+</div>
+
+</div>
+
+<div class="demo-grid">
+
+<div class="demo gradient conic">
+conic
+</div>
+
+<div class="code">
+<pre><code>
+background:
+conic-gradient(
+red,yellow,lime,
+cyan,blue,magenta
+);
+</code></pre>
+</div>
+
+</div>
+
+</section>
+
+<!-- ANIMATED GRADIENT -->
+
+<section>
+
+<h2>Animated Gradient</h2>
+
+<div class="demo-grid">
+
+<div class="demo animated-gradient">
+animation
+</div>
+
+<div class="code">
+<pre><code>
+background-size:400% 400%;
+
+animation:gradientMove 6s ease infinite;
+
+@keyframes gradientMove{
+0%{background-position:0%}
+50%{background-position:100%}
+100%{background-position:0%}
+}
+</code></pre>
+</div>
+
+</div>
+
+</section>
+
+<!-- SHADOWS -->
+
+<section>
+
+<h2>Shadows</h2>
+
+<div class="demo-grid">
+
+<div class="demo box-shadow">
+box-shadow
+</div>
+
+<div class="code">
+<pre><code>
+box-shadow:
+0 15px 30px
+rgba(0,0,0,0.3);
+</code></pre>
+</div>
+
+</div>
+
+<div class="demo-grid">
+
+<div class="demo">
+<img src="https://picsum.photos/150" class="shadow-img">
+</div>
+
+<div class="code">
+<pre><code>
+.shadow-img{
+filter:
+drop-shadow(
+10px 10px 10px
+rgba(0,0,0,0.5)
+);
+}
+</code></pre>
+</div>
+
+</div>
+
+</section>
+
+<!-- CURSORS -->
+
+<section>
+
+<h2>Cursors</h2>
+
+<div class="demo-flex">
+
+<div class="demo cursor pointer">
+pointer
+</div>
+
+
+<div class="demo cursor notallowed">
+not-allowed
+</div>
+
+<div class="demo cursor grab">
+grab
+</div>
+
+
+<div class="demo cursor crosshair">
+crosshair
+</div>
+
+
+<div class="demo cursor custom">
+custom
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

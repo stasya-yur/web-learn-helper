@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation + Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CSS Анімація</h1>
+
+<!-- TRANSFORM -->
+<section class="two-column">
+
+  <div class="demo">
+    <h2>Transform</h2>
+    <div class="box rotate">rotate</div>
+  </div>
+
+  <div class="code">
+<pre><code>
+.box {
+  transition: transform 0.6s ease;
+}
+
+.box:hover {
+  transform: rotate(45deg);
+}
+</code></pre>
+  </div>
+
+</section>
+
+
+<!-- TRANSITION -->
+<section class="two-column">
+
+  <div class="demo">
+    <h2>Transition</h2>
+    <div class="box transition-demo">Hover me</div>
+  </div>
+
+  <div class="code">
+<pre><code>
+.transition-demo {
+  transition: 
+    transform 1s ease-in-out 0.3s,
+    background 1s linear;
+}
+
+.transition-demo:hover {
+  transform: scale(1.2);
+  background: crimson;
+}
+</code></pre>
+  </div>
+
+</section>
+
+
+<!-- BUTTON -->
+<section class="two-column">
+
+  <div class="demo">
+    <h2>Кнопка</h2>
+    <button class="animated-btn">Натисни</button>
+  </div>
+
+  <div class="code">
+<pre><code>
+.animated-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.animated-btn:active {
+  transform: scale(0.95);
+}
+</code></pre>
+  </div>
+
+</section>
+
+
+<!-- KEYFRAMES -->
+<section class="two-column">
+
+  <div class="demo">
+    <h2>Keyframes</h2>
+    <div class="loader"></div>
+  </div>
+
+  <div class="code">
+<pre><code>
+@keyframes spin {
+  from { transform: rotate(0); }
+  to   { transform: rotate(360deg); }
+}
+
+.loader {
+  animation: spin 2s linear infinite;
+}
+</code></pre>
+  </div>
+
+</section>
+
+
+<!-- OPACITY + FADE IN -->
+<section class="two-column">
+
+  <div class="demo">
+    <h2>Fade In</h2>
+    <div class="fade-in">Поява елемента</div>
+  </div>
+
+  <div class="code">
+<pre><code>
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+</code></pre>
+  </div>
+
+</section>
+
+</body>
+</html>

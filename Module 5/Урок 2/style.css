@@ -1,0 +1,146 @@
+body{
+font-family:Arial;
+background:#f4f6f9;
+padding:40px;
+}
+
+h1{
+text-align:center;
+margin-bottom:50px;
+}
+
+section{
+margin-bottom:70px;
+}
+
+.demo-grid{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:30px;
+margin-bottom:25px;
+align-items:center;
+}
+
+/* DEMO BLOCK */
+
+.demo{
+display:flex;
+align-items:center;
+justify-content:center;
+height:150px;
+background:white;
+border-radius:10px;
+}
+
+/* CODE */
+
+.code{
+background:#1e1e1e;
+color:#00ff88;
+padding:20px;
+border-radius:10px;
+font-size:35px;
+}
+
+/* IMAGES */
+
+.img{
+width:200px;
+border-radius:10px;
+transition:0.4s;
+}
+
+/* FILTERS */
+
+.blur:hover{
+filter:blur(5px);
+}
+
+.brightness:hover{
+filter:brightness(150%);
+}
+
+.contrast:hover{
+filter:contrast(200%);
+}
+
+.saturate:hover{
+filter:saturate(300%);
+}
+
+/* GRADIENTS */
+
+.gradient{
+color:white;
+font-weight:bold;
+}
+
+.linear{
+background:linear-gradient(90deg,red,orange,yellow);
+}
+
+.radial{
+background:radial-gradient(circle,blue,purple);
+}
+
+.conic{
+background:conic-gradient(red,yellow,lime,cyan,blue,magenta,red);
+}
+
+/* ANIMATED GRADIENT */
+
+.animated-gradient{
+background:linear-gradient(45deg,red,orange,yellow,green,blue,purple);
+background-size:400% 400%;
+color:white;
+font-weight:bold;
+
+animation:gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+
+0%{background-position:0%}
+
+50%{background-position:100%}
+
+100%{background-position:0%}
+
+}
+
+/* SHADOW */
+
+.box-shadow{
+box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+.shadow-img{
+filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+}
+
+/* CURSORS */
+
+.cursor{
+border:2px solid #ccc;
+width: 150px;
+}
+
+.pointer{cursor:pointer;}
+.notallowed{cursor:not-allowed;}
+.grab{cursor:grab;}
+.crosshair{cursor:crosshair;}
+
+.custom{
+cursor: url("data:image/svg+xml,\
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'>\
+<text y='24' font-size='24'>⭐</text>\
+</svg>") 16 16, auto;
+}
+
+.demo-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

@@ -1,0 +1,95 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 600px;
+      background-color: #ffffff;
+      padding: 25px;
+      margin: 0 auto;
+      border: 3px solid #0d6efd;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* WIDTH / HEIGHT */
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    /* FOCUS */
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #0d6efd;
+      box-shadow: 0 0 8px rgba(13,110,253,0.6);
+    }
+
+    /* HOVER */
+    button:hover {
+      background-color: #0b5ed7;
+      color: white;
+    }
+
+    /* ACTIVE */
+    button:active {
+      transform: scale(0.97);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    /* BUTTON */
+    button {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      margin-top: 15px;
+    }
+
+    /* BORDER TYPES */
+    .borders {
+      margin-top: 20px;
+      padding: 15px;
+      border-top: 4px solid red;
+      border-right: 4px dashed green;
+      border-bottom: 4px dotted blue;
+      border-left: 4px double purple;
+      opacity: 0.9;
+    }
+
+    /* RADIO & CHECKBOX */
+    .inline {
+      display: inline-block;
+      width: auto;
+      margin-right: 10px;
+      cursor: pointer;
+    }

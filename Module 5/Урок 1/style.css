@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  padding: 10px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.demo {
+  text-align: center;
+}
+
+.code {
+  background: #1e1e1e;
+  color: #00ff88;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 35px;
+  overflow-x: auto;
+}
+
+/* BOX */
+.box {
+  width: 150px;
+  height: 150px;
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+/* TRANSFORM */
+.rotate {
+  transition: transform 0.6s ease;
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+/* TRANSITION */
+.transition-demo {
+  transition: transform 1s ease-in-out 0.3s,
+              background 1s linear;
+}
+
+.transition-demo:hover {
+  transform: scale(1.2);
+  background: crimson;
+}
+
+/* BUTTON */
+.animated-btn {
+  padding: 15px 30px;
+  background: #fd7e14;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.animated-btn:active {
+  transform: scale(0.95);
+}
+
+/* KEYFRAMES */
+@keyframes spin {
+  from { transform: rotate(0); }
+  to   { transform: rotate(360deg); }
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #ddd;
+  border-top: 10px solid #0d6efd;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+/* FADE IN */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  padding: 20px;
+  background: #198754;
+  color: white;
+}

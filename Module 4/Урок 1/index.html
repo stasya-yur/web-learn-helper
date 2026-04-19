@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Position та Z-index — Демонстрація</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  
+  <h1>Демонстрація CSS position та z-index</h1>
+  <p class="text" id="main-text">Привіт!</p>
+  <h2>z-index</h2>
+  <div class="z-container">
+    <div class="z1">z-index: 1</div>
+    <div class="z2">z-index: 2</div>
+    <div class="z3">z-index: 3</div>
+  </div>
+
+  <h2>position: static (за замовчуванням)</h2>
+  <div class="box static">
+    STATIC
+  </div>
+
+  <h2>position: relative</h2>
+  <div class="box relative">
+    RELATIVE<br>
+    top: 20px<br>
+    left: 30px
+  </div>
+  <div class="box relative2">
+    RELATIVE<br>
+    top: 20px<br>
+    left: 90px
+  </div>
+
+  <h2>position: absolute</h2>
+  <div class="absolute-container">
+    Контейнер (relative)
+    <div class="box absolute">
+      ABSOLUTE
+    </div>
+    <div class="box absolute2">
+      ABSOLUTE
+    </div>
+    <div class="box absolute3">
+      ABSOLUTE
+    </div>
+  </div>
+
+  <h2>position: sticky</h2>
+  <div class="sticky">
+    Я липкий (sticky). Прокрути сторінку ⬇
+  </div>
+
+  <p>
+    Крути вниз, щоб побачити ефект sticky.<br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus congue nunc ac posuere. Quisque nec pretium magna. Morbi eget tempus velit. Fusce condimentum volutpat felis, at bibendum nisi. Aenean sodales at metus et malesuada. Cras tristique augue id lorem pretium dapibus a ut libero. Nam eu lacinia justo.
+
+Phasellus turpis neque, vehicula sit amet placerat id, finibus quis ante. Phasellus elementum, ligula placerat molestie tempor, libero magna efficitur mi, tempor gravida tellus purus in lectus. Vestibulum viverra est finibus eros tempus tincidunt. Fusce aliquet cursus finibus. In consequat nunc vitae nibh aliquet pharetra. Nam vel ante in tellus volutpat maximus. Proin elementum at lorem at convallis. Mauris varius dui odio, eget faucibus nisi ultricies ac. Pellentesque eget nunc vel mi venenatis consequat nec vel arcu. Ut varius massa suscipit tristique luctus.
+
+In vitae tortor felis. Nam rhoncus consequat ex, et ornare justo sodales ut. Donec commodo feugiat orci eu facilisis. Ut efficitur massa at nunc volutpat, at finibus ex consequat. Maecenas tristique est dolor, at maximus dui vulputate in. Suspendisse maximus rutrum tincidunt. Suspendisse blandit risus non lacus malesuada, vitae malesuada dolor consectetur. Aliquam dui purus, rhoncus at aliquam nec, ullamcorper et libero. Ut egestas, ligula vel rhoncus luctus, quam turpis congue ligula, non tincidunt ligula ex quis odio. Phasellus mattis, tellus nec placerat cursus, ligula sem ultricies metus, eu volutpat nunc ex eu lorem. Phasellus et urna tortor.
+
+Sed nec dolor sagittis, placerat lorem in, ornare neque. Donec quis scelerisque nunc. Vestibulum dignissim euismod leo, nec efficitur elit pharetra non. Aliquam venenatis eget lectus vitae egestas. Donec accumsan rhoncus quam vitae rhoncus. Vivamus auctor facilisis quam, a blandit lacus accumsan sit amet. Sed posuere porta laoreet. Donec blandit efficitur quam ac porta. Fusce id tortor in mauris molestie vestibulum vitae vitae nisl. Vivamus interdum elit metus, a condimentum nisl mattis eget. Aenean pellentesque consequat nisl, vel ultricies nisi consectetur sed. Mauris sit amet massa eu libero fringilla dignissim sed in velit.
+
+Sed pulvinar imperdiet magna et ultricies. Cras quis placerat orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum volutpat erat nulla, sit amet vestibulum neque ultricies et. Praesent vel varius urna, at finibus dui. Vivamus iaculis ante tincidunt sem rutrum porttitor. In pulvinar lacus ut libero condimentum fermentum. Etiam id vehicula ex. Ut nec dui eu ligula volutpat sollicitudin. Cras sollicitudin commodo pellentesque.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus congue nunc ac posuere. Quisque nec pretium magna. Morbi eget tempus velit. Fusce condimentum volutpat felis, at bibendum nisi. Aenean sodales at metus et malesuada. Cras tristique augue id lorem pretium dapibus a ut libero. Nam eu lacinia justo.
+
+Phasellus turpis neque, vehicula sit amet placerat id, finibus quis ante. Phasellus elementum, ligula placerat molestie tempor, libero magna efficitur mi, tempor gravida tellus purus in lectus. Vestibulum viverra est finibus eros tempus tincidunt. Fusce aliquet cursus finibus. In consequat nunc vitae nibh aliquet pharetra. Nam vel ante in tellus volutpat maximus. Proin elementum at lorem at convallis. Mauris varius dui odio, eget faucibus nisi ultricies ac. Pellentesque eget nunc vel mi venenatis consequat nec vel arcu. Ut varius massa suscipit tristique luctus.
+
+In vitae tortor felis. Nam rhoncus consequat ex, et ornare justo sodales ut. Donec commodo feugiat orci eu facilisis. Ut efficitur massa at nunc volutpat, at finibus ex consequat. Maecenas tristique est dolor, at maximus dui vulputate in. Suspendisse maximus rutrum tincidunt. Suspendisse blandit risus non lacus malesuada, vitae malesuada dolor consectetur. Aliquam dui purus, rhoncus at aliquam nec, ullamcorper et libero. Ut egestas, ligula vel rhoncus luctus, quam turpis congue ligula, non tincidunt ligula ex quis odio. Phasellus mattis, tellus nec placerat cursus, ligula sem ultricies metus, eu volutpat nunc ex eu lorem. Phasellus et urna tortor.
+
+Sed nec dolor sagittis, placerat lorem in, ornare neque. Donec quis scelerisque nunc. Vestibulum dignissim euismod leo, nec efficitur elit pharetra non. Aliquam venenatis eget lectus vitae egestas. Donec accumsan rhoncus quam vitae rhoncus. Vivamus auctor facilisis quam, a blandit lacus accumsan sit amet. Sed posuere porta laoreet. Donec blandit efficitur quam ac porta. Fusce id tortor in mauris molestie vestibulum vitae vitae nisl. Vivamus interdum elit metus, a condimentum nisl mattis eget. Aenean pellentesque consequat nisl, vel ultricies nisi consectetur sed. Mauris sit amet massa eu libero fringilla dignissim sed in velit.
+
+Sed pulvinar imperdiet magna et ultricies. Cras quis placerat orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum volutpat erat nulla, sit amet vestibulum neque ultricies et. Praesent vel varius urna, at finibus dui. Vivamus iaculis ante tincidunt sem rutrum porttitor. In pulvinar lacus ut libero condimentum fermentum. Etiam id vehicula ex. Ut nec dui eu ligula volutpat sollicitudin. Cras sollicitudin commodo pellentesque.
+    </p>
+
+  
+
+  <div class="box fixed">
+    FIXED
+  </div>
+
+</body>
+</html>
